@@ -11,7 +11,7 @@ def get_version():
         path = os.path.dirname(os.readlink(path + os.sep + os.path.basename(__file__)))
     if not path: path = '.'
     curr_path = os.getcwd()
-    os.chdir(path)
+    os.chdir(os.path.dirname(os.path.abspath(path)))
     version = ' ver:' + getoutput('git describe --long --tags --dirty --always')
     os.chdir(curr_path)
     return version
