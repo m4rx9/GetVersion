@@ -1,0 +1,1 @@
+from GetVersion import get_version
