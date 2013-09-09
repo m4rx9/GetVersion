@@ -12,10 +12,9 @@ def get_version():
     if not path: path = '.'
     curr_path = os.getcwd()
     os.chdir(path)
-       
     version = ' ver:' + getoutput('git describe --long --tags --dirty --always')
     os.chdir(curr_path)
     return version
 
 if __name__ == '__main__':
-    print get_version()
+    print os.path.basename(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), get_version()
