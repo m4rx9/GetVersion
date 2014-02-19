@@ -1,4 +1,6 @@
-from GetVersion import get_version
+#!/usr/bin/python
+
+from curr_version import get_version
 
 print 'Usage: %s' %  __file__
 print '   ver: %s' % get_version(__file__) 
