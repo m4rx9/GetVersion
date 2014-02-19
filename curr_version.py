@@ -6,10 +6,17 @@ from commands import getoutput
 import os
 
 
-def get_version(currfn, verbose=False):
+def get_version(currfn='', verbose=False):
     """Get version of the tool based on state of the git repository.
-    Return version. The version is not printed!"""
-    path = os.path.dirname(currfn)
+    Return version. 
+
+    If currfn is empty, then the path is '.'. Hmm.. I think it will work. We will see.
+
+    The version is not printed!"""
+    if currfn == '':
+        path = '.'
+    else:
+        path = os.path.dirname(currfn)
     if verbose: print 'get_version::path', path
     if os.path.islink(currfn):#path + os.sep + os.path.basename(__file__)):
         path = os.path.dirname(os.readlink(path + os.sep + os.path.basename(currfn)))
