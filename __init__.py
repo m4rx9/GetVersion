@@ -1,1 +1,1 @@
-from GetVersion import get_version
+from curr_version import get_version
