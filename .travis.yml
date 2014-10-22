@@ -8,5 +8,5 @@ install:
 # command to run tests, e.g. python setup.py test
 script: "bash run-tests.sh"
 notifications:
-email:
-- magnus@genesilico.pl
+   email:
+     - magnus@genesilico.pl
