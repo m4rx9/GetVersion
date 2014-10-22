@@ -1,6 +1,8 @@
 curr_version
 -------------------------
 
+[![Build Status](https://travis-ci.org/m4rx9/curr_version.svg?branch=master)](https://travis-ci.org/m4rx9/curr_version)
+
 Usage:
 
 	>>> from curr_version import get_version
