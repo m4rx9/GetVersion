@@ -9,3 +9,9 @@ Usage:
 	>>> print 'ver: %s' % get_version()
 	ver: v0.1-1-g06cc96e
 
+Requirements
+-------------------------
+
+	sudo pip install sh
+
+https://pypi.python.org/pypi/sh
